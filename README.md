@@ -1,4 +1,4 @@
-# Trustify Anchor NFT Program
+# Solana Anchor NFT Program
 
 A Solana Anchor implementation of NFT minting with gasless transaction support, similar to the ERC721 GaslessMintNFT Ethereum contract.
 
@@ -13,16 +13,16 @@ A Solana Anchor implementation of NFT minting with gasless transaction support, 
 ## Project Structure
 
 ```
-trustify-anchor/
+Solana-anchor/
 ├── programs/                # Anchor program source code
-│   └── trustify-anchor/
+│   └── Solana-anchor/
 │       ├── src/lib.rs       # Main program logic
 │       └── Cargo.toml       # Program dependencies
 ├── client/                  # TypeScript client utilities
 │   ├── adapter.ts           # Client adapter for the Anchor program
 │   └── example.ts           # Example usage
 ├── tests/                   # Program tests
-│   └── trustify-anchor.ts   # Test suite
+│   └── Solana-anchor.ts   # Test suite
 ├── contractIDL.json         # Program IDL for client integration
 └── Anchor.toml              # Anchor configuration
 ```
@@ -79,7 +79,7 @@ Initialize the program with a name and symbol:
 
 ```typescript
 // Initialize the adapter
-const adapter = new TrustifyAnchorAdapter(
+const adapter = new SolanaAnchorAdapter(
   connection,
   keypair,
   programId,
